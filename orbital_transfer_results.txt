@@ -1,0 +1,103 @@
+
+       ORBITAL TRANSFER SIMULATION
+
+
+  1. INITIAL ORBIT
+  Orbit Type         : Elliptical (LEO/MEO region)
+  Eccentricity (e)   : 0.200000
+  Semi-latus rectum  : 8000.00 km
+  Semi-major axis (a): 8333.33 km
+  Semi-minor axis (b): 8164.97 km
+  Periapsis radius   : 6666.67 km  (altitude: 295.67 km)
+  Apoapsis radius    : 10000.00 km  (altitude: 3629.00 km)
+  Inclination (i)    : 28.50 deg
+  Arg of perigee (w) : 45.00 deg
+  Mean anomaly (M0)  : 0.00 deg
+  Ang. momentum (h)  : 56469.46 km^2/s
+  Specific energy    : -23.9160 km^2/s^2
+  Orbital period     : 7570.76 s  (126.18 min)  (2.1030 hr)
+  V at periapsis     : 8.4704 km/s
+  V at apoapsis      : 5.6469 km/s
+
+
+  2. FINAL ORBIT (TARGET)
+  Orbit Type         : Elliptical (LEO/MEO region)
+  Eccentricity (e)   : 0.600000
+  Semi-latus rectum  : 15000.00 km
+  Semi-major axis (a): 23437.50 km
+  Semi-minor axis (b): 18750.00 km
+  Periapsis radius   : 9375.00 km  (altitude: 3004.00 km)
+  Apoapsis radius    : 37500.00 km  (altitude: 31129.00 km)
+  Inclination (i)    : 51.60 deg
+  Arg of perigee (w) : 120.00 deg
+  Mean anomaly (M0)  : 0.00 deg
+  Ang. momentum (h)  : 77323.99 km^2/s
+  Specific energy    : -8.5035 km^2/s^2
+  Orbital period     : 35709.04 s  (595.15 min)  (9.9192 hr)
+  V at periapsis     : 8.2479 km/s
+  V at apoapsis      : 2.0620 km/s
+
+
+  3. HOHMANN TRANSFER ORBIT
+  Orbit Type         : Elliptical (LEO/MEO region)
+  Eccentricity (e)   : 0.698113
+  Semi-latus rectum  : 11320.75 km
+  Semi-major axis (a): 22083.33 km
+  Semi-minor axis (b): 15811.39 km
+  Periapsis radius   : 6666.67 km  (altitude: 295.67 km)
+  Apoapsis radius    : 37500.00 km  (altitude: 31129.00 km)
+  Inclination (i)    : 28.50 deg
+  Arg of perigee (w) : 45.00 deg
+  Mean anomaly (M0)  : 0.00 deg
+  Ang. momentum (h)  : 67174.79 km^2/s
+  Specific energy    : -9.0249 km^2/s^2
+  Orbital period     : 32659.40 s  (544.32 min)  (9.0721 hr)
+  V at periapsis     : 10.0762 km/s
+  V at apoapsis      : 1.7913 km/s
+
+
+  4. VELOCITY ANALYSIS
+  > At Departure (periapsis of initial orbit, theta = 0 deg):
+      V on orbit 1    : 8.4704 km/s
+      V on transfer   : 10.0762 km/s
+      dV1 (burn 1)    : +1.6058 km/s  (prograde)
+      V_escape here   : 10.9353 km/s
+
+  > At Arrival (apoapsis of final orbit, theta = 180 deg):
+      V on transfer   : 1.7913 km/s
+      V on orbit 2    : 2.0620 km/s
+      dV2 speed only  : +0.2706 km/s  (prograde)
+
+  > Plane Change at Arrival:
+      Inclination change  : 23.10 deg
+      dV plane-only       : 0.7173 km/s
+      dV combined (speed+plane): 0.8158 km/s
+      Savings vs sep burns: 0.1722 km/s
+
+
+  5. TRANSFER SUMMARY
+  Total dV             : 2.4216 km/s
+  Transfer time (TOF)  : 16329.70 s  (272.16 min)  (4.5360 hr)
+
+  > Orbit change        : Elliptical (e=0.2000)  -->  Elliptical  -->  Elliptical (e=0.6000)
+  > Periapsis alt change: 295.67 km  -->  3004.00 km  (d = +2708.33 km)
+  > Apoapsis alt change : 3629.00 km  -->  31129.00 km  (d = +27500.00 km)
+  > Energy change       : -23.9160  -->  -8.5035 km^2/s^2  (d = +15.4125)
+  > Period change       : 126.18 min  -->  595.15 min  (d = +468.97 min)
+  > Inclination change  : 28.50 deg  -->  51.60 deg  (di = +23.10 deg)
+
+
+  6. DESTINATION ORBIT CLASSIFICATION
+  After the transfer, the satellite is now in:
+      >>  Elliptical (LEO/MEO region)
+      >>  Eccentricity: 0.6000
+      >>  Inclination : 51.60 deg
+      >>  Arg perigee : 120.00 deg
+      >>  Highly elliptical orbit -- large diff between periapsis and apoapsis.
+         Periapsis: 9375.00 km,  Apoapsis: 37500.00 km
+         Ratio: 4.00
+
+  [i] Periapsis is in MEO (Medium Earth Orbit) region.
+  
+
+  Saving plots and outputs to file...
